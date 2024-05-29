@@ -13,7 +13,7 @@ COPY templates templates
 
 RUN go build -o build/fizzbuzz
 
-FROM scratch
+FROM kubeimages/distroless-static
 
 WORKDIR /lab3-go
 
